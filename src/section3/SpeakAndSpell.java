@@ -9,11 +9,34 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+		String word;
+		word = "peticularly";
+		speak("spell " + word);
 		// 2. Catch the user's answer in a String
-
+		String spelled = JOptionPane.showInputDialog("Spell it");
 		// 3. If the user spelled the word correctly, speak "correct"
-
+		if (spelled.equalsIgnoreCase(word))
+		{
+			speak("correct");
+		}
+		else
+		{
+			speak("wrong");
+		}
+		word = "extravaganza";
+		speak("spell " + word);
+		// 2. Catch the user's answer in a String
+		spelled = JOptionPane.showInputDialog("Spell it");
+		// 3. If the user spelled the word correctly, speak "correct"
+		if (spelled.equalsIgnoreCase(word))
+		{
+			speak("correct");
+		}
+		else
+		{
+			speak("wrong");
+		}
+		
 		// 4. Otherwise say "wrong"
 
 		// 5. repeat the process for other words
